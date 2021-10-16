@@ -1,23 +1,5 @@
-<head>
-    <title> </title>
-    <link rel="styles" href="/path/styles.css">
-    
-
-
-
-            body { color:yellow;}
-            p {
-                color:deeppink; 
-                font-size: 400%;
-            }
-            h1 {
-                color:deepskyblue;
-                font-size:100%;
-                letter-spacing: 1.1em;
-                word-spacing:5em;
-                /* you can look up all different text effects in w3schools */
-            }
-            p,h1 {font-face: Arial, Helvetica, sans-serif;
-            }
-            p a {color:orange;
-            }/*only changing links inside p tags called a descendant selector*/
+body {font-family:Verdana, Geneva, Tahoma, sans-serif}
+h1, h2 { color:darkorange}
+.evenrow {background-color:lightsalmon}
+h1{font-face:2 em}
+h2 {font-face:1.5 em}
