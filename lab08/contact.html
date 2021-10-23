@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <style>
+            
+            .floats{background-color:lightblue; border-radius: 1em; margin:30px;}
+            .address{float:left; padding-left:30px; padding-bottom:30px; padding-right:15px;}
+            .email, .linkedin {padding-left:30px;}
+            .email{padding-top:60px;}
+            .linkedin{padding-bottom:30px;}
+            .clearfloats{clear:both;}
+
+            .flex{display:flex; background-color:lightblue; border-radius: 1em; margin:30px;}
+            .map{float:right; order:2; padding-left:30px; padding-right:30px;}
+            .form{float:left; order:1; padding-left:30px;padding-top:30px;}
+            
+            footer{display:flex; color:#ed6335}
+            .year{flex-basis:20%;flex-basis:40%;}
+            .quote{}
+
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <a href="/lab08/index.html">Home</a> |
+            <a href="/lab08/skills.html">Skills</a> |
+            <a href="/contact.html">Contact</a> |
+        </nav>
+
+    <h1>Contact</h1>
+    
+    <div class="floats">
+        <div class="address">
+            <h2>Address</h2>
+            Katrina S. Abad <br>618 Kensington Road<br>Syracuse NY, 13210
+        </div>
+        <div class="email">
+                <p><a href="mailto:ksabad@syr.edu">Katrina S. Abad Email</a></p>
+        </div>
+        <div class="linkedin">
+                <a href="https://www.linkedin.com/in/katrina-abad/" target="_blank">
+                <img src="../images/LI-Logo.png" alt="linkedin logo" height="10"> </a>
+                <a href="https://www.linkedin.com/in/katrina-abad/" target="_blank">My LinkedIn Profile</a>
+        </div>    
+    </div>
+    
+    <div class="flex">
+
+        <div class="map">
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11666.314876177026!2d-76.1203977020737!3d43.029253754204625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f36ee8acef15%3A0xdc578cb0e9f4e3a6!2sSyracuse%20Cooperative%20Market!5e0!3m2!1sen!2sus!4v1631811486590!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <br><br>
+        </div>
+        <div class="form">
+                <form action="mailto:ksabad@syr.edu" method="post">
+                    <label for="fullname"><strong>Full Name</strong></label>
+                    <br>
+                    <input type="text" id="fullname" name="fname">
+                    <br><br>
+
+                    <label for="like"><strong>Did you like this page?</strong></label>
+                    <br>
+                    <select id="like" name="likeit">
+                            <option value="love">Loved it!</options>
+                            <option value="like">It's pretty good</option>
+                            <option value="okay">I mean... it works</option>
+                            <option value="no">It needs some work</option>
+                            <option value="ugh">I hated it</option>
+                    </select>
+                    <br><br>
+
+                    <label for="advice"><strong>Penny for your thoughts:</strong></label>
+                    <br>
+                    <textarea id="advice" name="advice" rows="10" cols="30">Tell us what you think!
+                    </textarea>
+                    <br>
+                    <input type="submit" value="send">
+
+                </form>
+            </div>
+        </div>
+
+    <footer>
+        <div class="year">
+            <strong>&copy;2021</strong>
+        </div>
+    </footer>
+
+    </body>
+    </html>
