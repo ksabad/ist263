@@ -25,5 +25,10 @@ nav{margin-bottom:30px}
 
 footer{border-top: 1 px solid #c9cbd0}
 
-@media only screen and (max-width:600px){
-    nav a{}
+@media only screen and (max-width:600px)
+                {nav a{ display:block;
+                float:none;
+                width:100%;
+                align-content:space-between}
+                span{display:none;}
+                }
