@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <style>
+        /* skip to content is 3 things
+        1. html link "skip" to content
+        2. add anchor, where the link will skip to
+        3. style it in css - position absolute and left to make it disappear
+        3b. bring it back by changing the position
+        */
+        #skip{
+            position:absolute;
+            left: -999px;
+            background-color:chartreuse;
+        }
+        /* positions the element relative to its parent */
+        /* # sign before selector means youre seslecting by id*/
+
+        #skip:focus{
+            left:10px; /*we will see the skip when it is tabbed to*/
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a id="skip" href="#content">Skip to Content</a> 
+        <!-- unlike class, there can only be 1 id of that name on the page-->
+        <!--pound sign says this link will move you down the page-->
+        <a href="home.html" tabindex="3" >Home</a>
+        <a href="about.html" tabindex="2">About</a>
+        <a href="contact.html"tabindex="1">Contact</a>
+    </nav>
+
+    <!-- tabindex HTML attribute that will change the order items are selected as you tab through them-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam libero justo laoreet sit. Blandit turpis cursus in hac habitasse platea. Et netus et malesuada fames. Aliquam eleifend mi in nulla posuere sollicitudin. Risus quis varius quam quisque id. Id interdum velit laoreet id donec ultrices tincidunt arcu. Amet purus gravida quis blandit. Nulla at volutpat diam ut venenatis. Et malesuada fames ac turpis egestas sed. Nulla facilisi nullam vehicula ipsum a arcu cursus. Et egestas quis ipsum suspendisse ultrices. Sed libero enim sed faucibus turpis in eu. Fames ac turpis egestas sed.</p>
+        <p>Odio morbi quis commodo odio aenean. At consectetur lorem donec massa sapien faucibus et molestie ac. Venenatis tellus in metus vulputate eu scelerisque. Fusce id velit ut tortor pretium. Turpis egestas integer eget aliquet nibh praesent. Risus nec feugiat in fermentum posuere urna. A lacus vestibulum sed arcu. Sociis natoque penatibus et magnis dis. Orci ac auctor augue mauris. Ultrices tincidunt arcu non sodales. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Aliquam nulla facilisi cras fermentum odio.</p>
+        <p>Est velit egestas dui id ornare. Faucibus turpis in eu mi bibendum neque egestas. Purus viverra accumsan in nisl nisi scelerisque. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Diam sit amet nisl suscipit adipiscing bibendum. Molestie at elementum eu facilisis sed odio morbi. Urna cursus eget nunc scelerisque. Condimentum lacinia quis vel eros donec ac odio tempor orci. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Pellentesque dignissim enim sit amet venenatis urna cursus. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Gravida in fermentum et sollicitudin ac. Viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Velit ut tortor pretium viverra suspendisse potenti nullam. Ullamcorper a lacus vestibulum sed arcu non odio. Rhoncus est pellentesque elit ullamcorper dignissim cras.</p>
+        <a id="content"></a> <!--This is an anchor point to allow a link to move you here-->
+        <p>Enim tortor at auctor urna nunc id cursus. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Quis eleifend quam adipiscing vitae proin sagittis. Dui faucibus in ornare quam. Dictum at tempor commodo ullamcorper a lacus vestibulum. Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Tristique et egestas quis ipsum suspendisse ultrices gravida. Nam aliquam sem et tortor consequat id porta. Quam pellentesque nec nam aliquam sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. Turpis egestas integer eget aliquet nibh praesent tristique magna. Pretium fusce id velit ut tortor. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.
+        </p>
+
+    
+</body>
+
+</html>
