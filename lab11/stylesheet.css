@@ -8,16 +8,16 @@ h2 {font-face:2 em;}
 h1{color:royalblue;}
 
 a:link{
-    color:magenta;
+    color:#eb4034;
 }
 a:visited {
-    color:skyblue;
+    color:royalblue;
 }
 
 nav{display:block; background-color:white;}
 
-nav a{color:magenta;}
-nav a:hover {background-color:yellow;color:magenta;}
+nav a{color:#eb4034;}
+nav a:hover {background-color:lightyellow;color:#eb4034;}
 
 nav{padding:10px}
 nav{margin-bottom:30px}
