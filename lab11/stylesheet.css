@@ -1,23 +1,26 @@
-body {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {margin:10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:18px;
     background-color:white; }
 
 h1{font-face:2.5 em
 }
 h2 {font-face:2 em;}
-h1{color:royalblue;}
+h1{color:#ff006e;}
+
+footer{color:royalblue;}
 
 a:link{
-    color:#eb4034;
+    color:#ff006e;
 }
 a:visited {
-    color:royalblue;
+    color:#8338ec;
 }
 
 nav{display:block; background-color:white;}
 
-nav a{color:#eb4034;}
-nav a:hover {background-color:lightyellow;color:#eb4034;}
+nav a{color:#ff006e;}
+nav a:hover {background-color:#ff006e;color:lightyellow;}
 
 nav{padding:10px}
 nav{margin-bottom:30px}
