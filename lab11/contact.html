@@ -29,69 +29,75 @@
 
             #skip:focus{left:10px;}
 
-            
+
 
         </style>
     </head>
 
     <body>
         <nav>
-            <a href="ist263/lab11/index.html">Home</a> <span>|</span>
-            <a href="ist263/lab11/skills.html">Skills</a> <span>|</span>
-            <a href="ist263/lab11/about.html">About</a> <span>|</span>
-            <a href="ist263/lab11/contact.html">Contact</a> <span>|</span>
+            <a id="skip" href="#content">Skip to Content</a> 
+            <a href="index.html">Home</a> <span>|</span>
+            <a href="skills.html">Skills</a> <span>|</span>
+            <a href="about.html">About</a> <span>|</span>
+            <a href="contact.html">Contact</a> <span>|</span>
         </nav>
-
-    <h1>Contact</h1>
     
-    <div class="floats">
-        <div class="address">
-            <h2>Address</h2>
-            Katrina S. Abad <br>618 Kensington Road<br>Syracuse NY, 13210
-        </div>
-        <div class="email">
-                <p><a href="mailto:ksabad@syr.edu">Katrina S. Abad Email</a></p>
-        </div>
-        <div class="linkedin">
-                <a href="https://www.linkedin.com/in/katrina-abad/" target="_blank">
-                <img src="../images/LI-Logo.png" alt="linkedin logo" height="10"> </a>
-                <a href="https://www.linkedin.com/in/katrina-abad/" target="_blank">My LinkedIn Profile</a>
-        </div>    
-    </div>
+    <a id="content"></a>
+
+    <section>
+        <h1>Contact</h1>
     
-    <div class="flex">
-
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11666.314876177026!2d-76.1203977020737!3d43.029253754204625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f36ee8acef15%3A0xdc578cb0e9f4e3a6!2sSyracuse%20Cooperative%20Market!5e0!3m2!1sen!2sus!4v1631811486590!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-
-        <div class="form">
-                <form action="mailto:ksabad@syr.edu" method="post">
-                    <label for="fullname"><strong>Full Name</strong></label>
-                    <br>
-                    <input type="text" id="fullname" name="fname">
-                    <br><br>
-
-                    <label for="like"><strong>Did you like this page?</strong></label>
-                    <br>
-                    <select id="like" name="likeit">
-                            <option value="love">Loved it!</option>
-                            <option value="like">It's pretty good</option>
-                            <option value="okay">I mean... it works</option>
-                            <option value="no">It needs some work</option>
-                            <option value="ugh">I hated it</option>
-                    </select>
-                    <br><br>
-
-                    <label for="advice"><strong>Penny for your thoughts:</strong></label>
-                    <br>
-                    <textarea id="advice" name="advice" rows="10" cols="30">Tell us what you think!
-                    </textarea>
-                    <br>
-                    <input type="submit" value="send">
-
-                </form>
+        <div class="floats">
+            <a id="content"></a>
+            <div class="address">
+                <h2>Address</h2>
+                Katrina S. Abad <br>618 Kensington Road<br>Syracuse NY, 13210
             </div>
+            <div class="email">
+                    <p><a href="mailto:ksabad@syr.edu">Katrina S. Abad Email</a></p>
+            </div>
+            <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/katrina-abad/" target="_blank">
+                    <img src="../images/LI-Logo.png" alt="linkedin logo" height="10"> </a>
+                    <a href="https://www.linkedin.com/in/katrina-abad/" target="_blank">My LinkedIn Profile</a>
+            </div>    
         </div>
+        
+        <div class="flex">
+            <figure>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11666.314876177026!2d-76.1203977020737!3d43.029253754204625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f36ee8acef15%3A0xdc578cb0e9f4e3a6!2sSyracuse%20Cooperative%20Market!5e0!3m2!1sen!2sus!4v1631811486590!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </figure>
+
+            <div class="form">
+                    <form action="mailto:ksabad@syr.edu" method="post">
+                        <label for="fullname"><strong>Full Name</strong></label>
+                        <br>
+                        <input type="text" id="fullname" name="fname">
+                        <br><br>
+
+                        <label for="like"><strong>Did you like this page?</strong></label>
+                        <br>
+                        <select id="like" name="likeit">
+                                <option value="love">Loved it!</option>
+                                <option value="like">It's pretty good</option>
+                                <option value="okay">I mean... it works</option>
+                                <option value="no">It needs some work</option>
+                                <option value="ugh">I hated it</option>
+                        </select>
+                        <br><br>
+
+                        <label for="advice"><strong>Penny for your thoughts:</strong></label>
+                        <br>
+                        <textarea id="advice" name="advice" rows="10" cols="30">Tell us what you think!
+                        </textarea>
+                        <br>
+                        <input type="submit" value="send">
+
+                    </form>
+                </div>
+            </div>
+    </section>
 
     <footer>
         <div class="year">
