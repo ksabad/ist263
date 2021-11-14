@@ -9,6 +9,18 @@
             .copyright{}
             .quote{float:right;}
             .meadow{max-width:100%;}
+            #skip{
+            position:absolute;
+            left: -999px;
+            background-color:chartreuse;
+        }
+        /* positions the element relative to its parent */
+        /* # sign before selector means youre seslecting by id*/
+
+        #skip:focus{
+            left:10px;} /*we will see the skip when it is tabbed to*/
+
+
         </style>
     </head>
     <body>
@@ -32,6 +44,6 @@
             <div class="copyright">&copy;2021</div>
             <div class="quote">"The devil is in the details" -Louis Kahn</div>
         </footer>
-        
+
     </body>
 </html>

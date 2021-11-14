@@ -12,6 +12,20 @@
             .flex2{display:flex;}
             aside{padding:15px; margin-left: 15px;color:white; background-color:#ed6335; border-radius:1em; height:300px;}
             h2{color:white;}
+
+
+            #skip{
+            position:absolute;
+            left: -999px;
+            background-color:chartreuse;
+        }
+        /* positions the element relative to its parent */
+        /* # sign before selector means youre seslecting by id*/
+
+        #skip:focus{
+            left:10px; /*we will see the skip when it is tabbed to*/}
+
+
         </style>
         
         <link rel="stylesheet" href="stylesheet.css">
