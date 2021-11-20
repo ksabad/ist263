@@ -1,7 +1,8 @@
 body {margin:10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:15px;
-    background-color:white; }
+    font-size:18px;
+    background-color:white;
+ }
 
 h1{font-face:2.5 em
 }
@@ -17,10 +18,15 @@ a:visited {
     color:#2929FF;
 }
 
-nav{display:block; background-color:white;}
+nav{display:block; background-color:white;
+    font-face:2em;}
 
 nav a{color:#ff006e;}
-nav a:hover {background-color:#ff006e;color:lightyellow;}
+nav a:hover{
+    background: linear-gradient(90deg,pink 0%, red 100%);
+    border-radius: .5em;
+    color:white;}
+
 
 nav{padding:10px;
     margin-bottom:30px;}
