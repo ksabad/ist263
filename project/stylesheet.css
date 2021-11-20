@@ -1,5 +1,5 @@
 body {margin:10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:15px;
     background-color:white; }
 
@@ -22,8 +22,8 @@ nav{display:block; background-color:white;}
 nav a{color:#ff006e;}
 nav a:hover {background-color:#ff006e;color:lightyellow;}
 
-nav{padding:10px}
-nav{margin-bottom:30px}
+nav{padding:10px;
+    margin-bottom:30px;}
 
 
 footer{border-top: 1 px solid #c9cbd0}
