@@ -17,8 +17,7 @@
 
             .flexcontainer{
                 border: solid 3pt black;
-                flex-basis:50%;
-                height:600px;
+                flex-basis:60%;
                 border-radius: 2em;
                 align-items: center;
                 margin:20px;
@@ -40,7 +39,6 @@
             }
             nav{display:flex; 
                 justify-content:right;
-                flex-direction: row;
                 padding:10px;
                 margin-bottom:30px;
                 font-face:3em;}
@@ -48,10 +46,19 @@
             nav a{color:#ff006e;
                 font-face:3em;}
 
-            .section{margin-top:10px;}
+            .section{margin-top:10px;
+            margin-left:10px;}
             .pageflex{display:flex;
                 justify-content:center;
                 align-items: center;}
+
+            @media only screen and (min-width:1000px){
+                nav{flex-direction: row;} 
+            }
+            @media only screen and (max-width:600px){
+                nav{flex-direction: wrap;} 
+
+            }
 
         </style>
     </head>
