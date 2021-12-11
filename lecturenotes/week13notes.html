@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Week 2</title>
+        <style>
+            #myfirsttag {background-color: blue;}
+
+        </style>
+        <script>
+            function changeText(){
+                document.getElementById("myfirsttag").innerHTML = '<p>Hello World!</p>';
+                /*the above code locates an element by id and then changes the
+                    contents of that element*/
+            }
+
+            function changeImage(){
+                document.getElementById("rollover").setAttribute('src', '../images/images/pizza.jpg');
+            }
+
+            function changeBack(){
+                document.getElementById("rollover").setAttribute('src', '../images/images/cannoli.jpg');
+            }
+
+            function changebgcolor(){
+                /* 1. locate the place I'm going to change the bg color
+                2. get value of color picker and set the bg color to that*/
+                document.getElementById("pageclr").style.backgroundColor = 
+                document.getElementById("bgcolor").value; 
+
+            }
+        </script>
+    </head>
+
+    <body id="pageclr">
+        <div id="myfirsttag" onclick="changeText();"><br></div>
+        <!-- running the changeTextFunction when the elment is clicked-->
+        <!-- provides a location for our dynamic text to display -->
+
+
+
+        <img src="../images/images/cannoli.jpg" id="rollover" onmouseover="changeImage();" onmouseout="changeBack();">
+
+        <form>
+            <input type="color" id="bgcolor" onchange="changebgcolor();">
+        </form>
+
+    </body> 
+</html>
