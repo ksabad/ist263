@@ -5,45 +5,32 @@
         <title>Katrina's Portfolio</title>
         <link rel="stylesheet" href="stylesheet.css">
         <style>
-            .copyright{}
             .quote{float:right;}
             .meadow{max-width:100%;}
-            body {background-image:url("../project/images/home.png");
-                background-size:cover;}
-
+            #navlinks{float:right;}
+            body {background-image:url("../project/images/home.png"); background-size:cover;}
             main{background-color: white;}
-            #skip{
-            position:absolute;
-            left: -999px;
-            background-color:chartreuse;
-        }
-        /* positions the element relative to its parent */
-        /* # sign before selector means youre seslecting by id*/
-
-        #skip:focus{
-            left:100px;} /*we will see the skip when it is tabbed to*/
-
+            #skip{ position:absolute; left: -999px; background-color:chartreuse;}
+            /* positions the element relative to its parent */
+            /* # sign before selector means youre seslecting by id*/
+            #skip:focus{left:100px;} /*we will see the skip when it is tabbed to*/
+            #intro{display:flex; width:50%; margin:30px; display:flex; justify-content: center;}
+            #introbox{display:flex;margin:20px;font-size: 3em;}
         </style>
     </head>
     <body>
         <nav id="navlinks">
-            <a href="/homepage.html">Home</a> |
-            <a href="/about.html">About</a> |
-            <a href="/architecture.html">Architecture</a> |
-            <a href="/art.html">Art</a> |
-            <a href="/contact.html">Contact</a> |
+            <a href="/homepage.html">home</a> |
+            <a href="/about.html">about</a> |
+            <a href="/architecture.html">architecture</a> |
+            <a href="/art.html">art</a> |
+            <a href="/contact.html">contact</a>
         </nav>
-        <header>
-            <h1>welcome home</h1>
-        </header>
-        <main>
-            <a id="content"></a>
-            <div>
-                <p> I'm an architecture major interested in participatory design, rehousing homeless populations, and representational methods. I am skilled in a variety of 3D modeling and drafting softwares like AutoCAD, Rhino 3D and SolidWorks, and I've been working with Adobe Suite for over five years. I know basic carpentry, metal working, welding, and 3D printing and I am skilled in hand rendering and urban sketching. My artwork has been shown in exhibitions in both Italy, New York and New Jersey and I have worked as a freelance artist and window painter and have helped work on the exhibition designs for shows in different venues in NYC.</p><br>
-                <p>Outside of work, I enjoy drawing and making illustrations for my friends. During quarantine I've started making different clothing pieces, but mostly watching videos of people making clothes. I am a pescetarian but I am allergic to fish which can be confusing, but is actually quite simple! I've also recently mastered the art of doing a headstand and once did it while paddle boarding. Unfortunately I have not been able to recreate that moment.</p>
-            </div>
-        </main>
 
+        <main id="intro">
+            <h1 id="introbox">Hi, I'm Katrina. I'm an architecture student passionate about urban design, illustration, and user experience design.</h1>
+            
+        </main>
         <footer>
             <div class="copyright">&copy;2021</div>
             <div class="quote">"The devil is in the details" -Louis Kahn</div>

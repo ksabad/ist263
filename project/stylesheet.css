@@ -1,14 +1,10 @@
-body {margin:10px;
+body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:18px;
-    background-color:white;
- }
+    font-size:16px;
+    background-color:white;}
 
-h1{font-face:2.5 em
-}
+h1{font-face:2.5em; color:#ff006e;}
 h2 {font-face:2 em;}
-h1{color:#ff006e;}
-
 footer{color:#2929FF;}
 
 a:link{
@@ -19,18 +15,13 @@ a:visited {
 }
 
 nav{display:block; background-color:white;
-    font-face:2em;}
+    font-face:1em;}
 
 nav a{color:#ff006e;}
 nav a:hover{
     background: linear-gradient(90deg,pink 0%, red 100%);
-    border-radius: .5em;
+    border-radius:.5em;
     color:white;}
-
-
-nav{padding:10px;
-    margin-bottom:30px;}
-
 
 footer{border-top: 1 px solid #c9cbd0}
 
