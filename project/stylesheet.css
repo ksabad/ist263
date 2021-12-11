@@ -1,10 +1,7 @@
-body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:16px;
-    background-color:white;}
+body {font-family: 'Readex Pro', sans-serif;font-size:16px; background-color:white;}
 
-h1{font-face:2.5em; color:#ff006e;}
-h2 {font-face:2 em;}
+h1{font-face:2; color:#ff006e;}
+h2 {font-face:1.5 em;}
 footer{color:#2929FF;}
 
 a:link{
