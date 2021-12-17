@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="../images/images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>architecture</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script>
+            function hamburger(){
+                var x= document.getElementById("navlinks");
+                if (x.style.display ==="block") {
+                    x.style.display="none";
+                } else{
+                    x.style.display = "block"
+                }
+            }
+
+            function infooff(){
+                document.getElementById("villainfo").style.display='none';
+                document.getElementById("rabbitinfo").style.display='none';
+                document.getElementById("blockinfo").style.display='none';
+                document.getElementById("villa").style.border='solid 8px'
+                document.getElementById("rabbit").style.border='solid 8px'
+                document.getElementById("block").style.border='solid 8px'
+
+            }
+
+            function villaon(){
+                document.getElementById('villainfo').style.display='flex';
+                document.getElementById('villa').style.border='dashed 6px'
+            }
+
+            function rabbiton(){
+                document.getElementById('rabbitinfo').style.display='flex';
+                document.getElementById('rabbit').style.border='dashed 6px'
+            }
+
+            function blockon(){
+                document.getElementById('blockinfo').style.display='flex'
+                document.getElementById('block').style.border='dashed 6px'
+            }
+
+        </script>
+        <style>
+            div.gallery img{
+                border:5px black solid;
+                width:100%;
+
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+            div.gallery:hover{
+                border:8 px black dashed;
+            }
+            .responsive{
+                float:left;
+                padding-left:20px;
+                padding-right:20px;
+                width:20%;
+            }
+            section{
+                display:flex;
+                flex-direction:row;
+                margin:30px;
+                justify-content: center;
+                height:100%
+            }
+
+            #villainfo, #blockinfo, #rabbitinfo {display:none;}
+
+            @media only screen and (max-width: 768px) {
+                section{
+                    flex-direction:column;
+                }
+                .responsive {
+                    width:50%;
+                    padding:10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div id="navlinks">
+                <a href="index.html">home</a><span>|</span>
+                <a href="about.html">about</a><span>|</span>
+                <a class="active" href="architecture.html">architecture</a><span>|</span>
+                <a href="art.html">art</a><span>|</span>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="hamburger">
+                <img id="icon" src="../images/favicon.png" alt="menu icon" onclick="hamburger()">
+            </div>
+        </nav>
+        <div class="clear"></div>
+
+        <section>
+            <div class="responsive">
+                <div class="gallery">
+                    <img id="villa" src="images/villa_small.jpg" alt="villa" onmouseover="villaon();" onmouseout="infooff();">
+                </div>
+                <div id="villainfo">
+                    <p>Once home to the Rossa family, the Villa Rossa has served as a satellite campus for Syracuse University on the edge of Florence. This project seeks to create new studio, exhibition, and library spaces in the Villa Rossa campus. A thorough typological study of villas throughout Italy resulted in a simple yet elegant proposal: the garden is an object that can be contained and celebrated by complimentary built forms.
+                    </p>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                 <img id="block" src="images/blocksmall.jpg" alt="stairs collage" onmouseover="blockon();" onmouseout="infooff();">
+                </div>
+                <div id="blockinfo">
+                    <p>The typical arrangement of suburban American homes, and the back and front yard, creates leftover spaces. This project looks to these spaces as the site for an urban intervention through an elevated catwalk and a corresponding loggia on the ground. Introducing a variety of programs and new built forms along the new artery emphasize the block's instinct inwards. Minimal intrusion on the existing homes and new connections to the center of the block give new life to this suburban block.</p>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img id="rabbit" src="images/rabbitsmall.jpg" alt="axonometric forms" onmouseover="rabbiton();" onmouseout="infooff();">
+                </div>
+                <div id="rabbitinfo">
+                    <p>
+                        The Mediterranean pine at the center of the villa's courtyard, one of Florence's oldest and most protected, acts as the center of the project. Two new axes are created around the historical pine to emphasize the connection between the site's two exterior green spaces. The resultant volumes were subtly adjusted to accommodate the space around these axes while maintaining the vertical hierarchy of the pine. 
+                    </p>
+                </div>
+            </div>
+
+            
+
+        </section>
+
+
+        <footer class="footer">
+            <div class="copyright">&copy;2021 Katrina Abad </div>
+        </footer> 
+    </body>
+</html>

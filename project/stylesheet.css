@@ -41,6 +41,7 @@ footer{border-top: 1 px solid #c9cbd0}
 
 #navlinks a:hover{background: linear-gradient(90deg,pink 0%, red 100%); border-radius:.5em; color:white;}
 .active{background-color:yellow}
+
 @media only screen and (max-width:768px){
     nav{
         overflow:hidden;
@@ -50,9 +51,11 @@ footer{border-top: 1 px solid #c9cbd0}
         display:flex;
         flex-direction:column;
         position:fixed;
-        font-size:1em;
+        font-size:1.5em;
         align-content:space-between;
         display:none;
+        margin-right: 40px;
+
     }
     #navlinks a:hover{background: linear-gradient(90deg,pink 0%, red 100%); border-radius:.5em; color:white;}
     span{display:none;}
@@ -61,6 +64,6 @@ footer{border-top: 1 px solid #c9cbd0}
  
 @media only screen and (min-width:768px){
     .hamburger{display:none;}
-    #navlinks{float:right;}
+    #navlinks{display:flex; flex-direction: row; justify-content: flex-end;}
     #navlinks a{margin-right:5px; margin-left:5px;}
 }      

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="../images/images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>architecture</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script>
+            function hamburger(){
+                var x= document.getElementById("navlinks");
+                if (x.style.display ==="block") {
+                    x.style.display="none";
+                } else{
+                    x.style.display = "block"
+                }
+            }
+
+            function infooff(){
+                document.getElementById("poolinfo").style.display='none';
+                document.getElementById("lakeinfo").style.display='none';
+            }
+
+            function poolon(){
+                document.getElementById('poolinfo').style.display='block';
+            }
+
+            function lakeon(){
+                document.getElementById('lakeinfo').style.display='block';
+            }
+
+        </script>
+        <style>
+            div.box{margin:30px;}
+            section{
+                display:flex;
+                flex-direction:row;
+                margin:30px;
+                justify-content: center;
+                height:100%;
+                flex-basis:60%;
+            }
+            .box{display:flex;}
+            #poolinfo, #lakeinfo {display:none;}
+
+            @media only screen and (max-width: 768px) {
+                section{
+                    flex-direction:column;
+                }
+                .box {
+                    padding:10px;
+                }
+            }
+            .box{display:flex; flex-direction: column;}
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div id="navlinks">
+                <a href="index.html">home</a><span>|</span>
+                <a href="about.html">about</a><span>|</span>
+                <a href="architecture.html">architecture</a><span>|</span>
+                <a class="active" href="art.html">art</a><span>|</span>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="hamburger">
+                <img id="icon" src="../images/favicon.png" alt="menu icon" onclick="hamburger()">
+            </div>
+        </nav>
+        <div class="clear"></div>
+
+        <section>
+            <div class="box">
+                <div class="gallery">
+                    <img id="pool" src="images/oil1.jpg" alt="swimming pool" onmouseover="poolon();" onmouseout="infooff();">
+                </div>
+                <div id="poolinfo">
+                    <p><strong>pool tiles</strong>(may 2021) oil pastel on a5 </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="gallery">
+                    <img id="lake" src="images/oil2.jpg" alt="garden illustration" onmouseover="lakeon();" onmouseout="infooff();">
+                </div>
+                <div id="lakeinfo">
+                    <p><strong>lake michigan</strong> (july 2021) oil pastel on a5</p>
+                </div>
+            </div>
+
+            
+
+        </section>
+
+
+        <footer class="footer">
+            <div class="copyright">&copy;2021 Katrina Abad </div>
+        </footer> 
+    </body>
+</html>
