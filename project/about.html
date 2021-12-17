@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head lang="en">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="../images/images/favicon.ico">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>about</title>
         <link rel="stylesheet" href="stylesheet.css">
-        <style>
-            #skip{
-            position:absolute;
-            left: -999px;
-            background-color:chartreuse;
+        <script>
+            function hamburger(){
+                var x= document.getElementById("navlinks");
+                if (x.style.display ==="block") {
+                    x.style.display="none";
+                } else{
+                    x.style.display = "block"
+                }
             }
-                /* positions the element relative to its parent */
-                /* # sign before selector means youre seslecting by id*/
-
-            #skip:focus{left:100px;}
-
+        </script>
+        <style>
             .flexcontainer{
                 border: solid 3pt black;
-                flex-basis:60%;
+                flex-basis:50%;
                 border-radius: 2em;
                 align-items: center;
                 margin:20px;
@@ -38,42 +42,32 @@
                 margin-right:30px;
                 margin-bottom:20px;
             }
-            nav{display:flex; 
-                justify-content:right;
-                padding:10px;
-                margin-bottom:30px;
-                font-face:3em;}
-
-            nav a{color:#ff006e;
-                font-face:3em;}
-
-            .section{margin-top:10px;
-            margin-left:10px;}
-            .pageflex{display:flex;
+            .section{
+                margin-top:10px; 
+                margin-left:10px;
+            }
+            .pageflex{
+                display:flex;
                 justify-content:center;
-                align-items: center;}
-
-            @media only screen and (min-width:1000px){
-                nav{flex-direction: row;} 
+                align-items: center;
             }
-            @media only screen and (max-width:600px){
-                nav{flex-direction: wrap;} 
-
-            }
-
         </style>
     </head>
 
     <body>
         <nav>
-            <a id="skip" href="#content">Skip to Content</a> 
-            <a href="index.html">home</a> <span>|</span>
-            <a href="skills.html">skills</a> <span>|</span>
-            <a href="architecture.html">architecture</a> <span>|</span>
-            <a href="art.html">art</a> <span>|</span>
-            <a href="about.html">about</a> <span>|</span>
-            <a href="contact.html">Contact</a> <span>|</span>
+            <div class="hamburger">
+                <img id="icon" src="../images/favicon.png" alt="circle" onclick="hamburger()">
+            </div>
+            <div id="navlinks">
+                <a href="index.html">home</a> <span>|</span>
+                <a href="about.html">about</a> <span>|</span>
+                <a href="architecture.html">architecture</a> <span>|</span>
+                <a href="art.html">art</a> <span>|</span>
+                <a href="contact.html">contact</a>
+            </div>
         </nav>
+
         <div class="clear"></div>
 
 
@@ -103,6 +97,11 @@
                 </section> 
             </div>
         </div>
+
+        <footer class="footer">
+            <div class="copyright">&copy;2021 Katrina Abad </div>
+        </footer>
+
     </body>
 
 </html>

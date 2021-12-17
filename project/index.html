@@ -5,39 +5,60 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="../images/images/favicon.ico">
-        <meta charset="utf-8", name="viewport", content="width=device-width initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Katrina's Portfolio</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <script>
+            function hamburger(){
+                var x= document.getElementById("navlinks");
+                if (x.style.display ==="block") {
+                    x.style.display="none";
+                } else{
+                    x.style.display = "block"
+                }
+            }
+        </script>
         <style>
-            .quote{float:right;}
-            .meadow{max-width:100%;}
-            #navlinks{float:right;}
-            body {background-image:url("../project/images/home.png"); background-size:cover;}
-            main{background-color: white;}
-            #skip{ position:absolute; left: -999px; background-color:chartreuse;}
-            /* positions the element relative to its parent */
-            /* # sign before selector means youre seslecting by id*/
-            #skip:focus{left:100px;} /*we will see the skip when it is tabbed to*/
-            #intro{display:flex; width:50%; margin:30px; display:flex; justify-content: center;}
-            #introbox{display:flex;margin:20px;font-size: 3em;}
+            #intro{display:flex; margin:10px;}
+            #introbox{margin:20px;}
+            @media only screen and (min-width:768px){  
+                #intro{width:60%;} 
+                body {background-image:url("../project/images/home.png"); background-size:cover; background-repeat:no-repeat;}       
+            }
+            @media only screen and (max-width:768px){
+                body {
+                    background-image:url("../project/images/home-small.png"); background-size:cover;
+                }
+                h1{font-size: 1.5em;}
+                #intro{width:auto; overflow: auto;}
+            }
+
         </style>
     </head>
     <body>
-        <nav id="navlinks">
-            <a href="/homepage.html">home</a> |
-            <a href="/about.html">about</a> |
-            <a href="/architecture.html">architecture</a> |
-            <a href="/art.html">art</a> |
-            <a href="/contact.html">contact</a>
+        <nav>
+            <div id="navlinks">
+                <a class="active" href="index.html">home</a><span>|</span>
+                <a href="about.html">about</a><span>|</span>
+                <a href="architecture.html">architecture</a><span>|</span>
+                <a href="art.html">art</a><span>|</span>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="hamburger">
+                <img id="icon" src="../images/favicon.png" alt="menu icon" onclick="hamburger()">
+            </div>
         </nav>
+        <div class="clear"></div>
+
 
         <main id="intro">
-            <h1 id="introbox">Hi, I'm Katrina. I'm an architecture student passionate about urban design, illustration, and user experience design.</h1>
+            <a id="skip" href="#content">Skip to Content</a> 
+            <h1 id="introbox">Hi, I'm Katrina. I'm an architecture student passionate about urban design, illustration, and user experience design. Welcome to my website!</h1>
             
         </main>
-        <footer>
-            <div class="copyright">&copy;2021</div>
-            <div class="quote">"The devil is in the details" -Louis Kahn</div>
+
+        <footer class="footer">
+            <div class="copyright">&copy;2021 Katrina Abad </div>
         </footer>
 
     </body>

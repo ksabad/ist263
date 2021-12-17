@@ -1,7 +1,17 @@
+#skip{
+    position:absolute;
+    left: -999px;
+    background-color:chartreuse;
+    }
+        /* positions the element relative to its parent */
+        /* # sign before selector means youre seslecting by id*/
+
+#skip:focus{left:100px;}
+
 body {font-family: 'Readex Pro', sans-serif;font-size:16px; background-color:white;}
 
-h1{font-face:2; color:#ff006e;}
-h2 {font-face:1.5 em;}
+h1{font-size:3em; color:#ff006e;}
+h2 {font-size:1.5em;}
 footer{color:#2929FF;}
 
 a:link{
@@ -11,22 +21,46 @@ a:visited {
     color:#2929FF;
 }
 
-nav{display:block; background-color:white;
-    font-face:1em;}
+nav{
+    display:flex;
+    justify-content: end; 
+    background-color:white;
+    font-size:1em;}
 
 nav a{color:#ff006e;}
-nav a:hover{
-    background: linear-gradient(90deg,pink 0%, red 100%);
-    border-radius:.5em;
-    color:white;}
+
 
 footer{border-top: 1 px solid #c9cbd0}
+.footer {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    background: blue; 
+    color:white;
+}
 
-@media only screen and (max-width:600px)
-    {nav a{
-        display:block;
-        float:none;
-        width:100%;
-        align-content:space-between}
-    span{display:none;}
+#navlinks a:hover{background: linear-gradient(90deg,pink 0%, red 100%); border-radius:.5em; color:white;}
+.active{background-color:yellow}
+@media only screen and (max-width:768px){
+    nav{
+        overflow:hidden;
+        position:relative;
     }
+    #navlinks {
+        display:flex;
+        flex-direction:column;
+        position:fixed;
+        font-size:1em;
+        align-content:space-between;
+        display:none;
+    }
+    #navlinks a:hover{background: linear-gradient(90deg,pink 0%, red 100%); border-radius:.5em; color:white;}
+    span{display:none;}
+    .hamburger{display:block;} 
+}
+ 
+@media only screen and (min-width:768px){
+    .hamburger{display:none;}
+    #navlinks{float:right;}
+    #navlinks a{margin-right:5px; margin-left:5px;}
+}      

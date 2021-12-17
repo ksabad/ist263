@@ -1,110 +1,128 @@
 <!DOCTYPE html>
 <html>
     <head lang="en">
-        <meta charset="utf-8", name="viewport", content="width=device-width initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="../images/images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>contact</title>
         <link rel="stylesheet" href="stylesheet.css">
-        <style>
-            
-            .floats{background-color:lightyellow; border-radius: 1em; margin:30px;}
-            .address{float:left; padding-left:30px; padding-bottom:30px; padding-right:15px;}
-            .email, .linkedin {padding-left:30px;}
-            .email{padding-top:60px;}
-            .linkedin{padding-bottom:30px;}
-            .clearfloats{clear:both;}
-            .form{float:left; order:1; padding-left:30px;padding-top:30px; height:100%;}
-            
-            .h1{margin-left:30px;}
-
-            footer{display:flex; color:royalblue;}
-            .year{flex-basis:20%;flex-basis:40%;}
-
-            .flex{display:flex; flex-wrap:wrap; background-color:lightyellow; border-radius: 1em; margin:30px;}
-            div {color:royalblue;}
-
-            #skip{
-            position:absolute;
-            left: -999px;
-            background-color:chartreuse;
+        <script>
+            function hello(){
+                document.getElementById("greeting").style.backgroundColor='yellow';
             }
-                /* positions the element relative to its parent */
-                /* # sign before selector means youre seslecting by id*/
 
-            #skip:focus{left:100px;}
+            function goodbye(){
+                document.getElementById("greeting").style.backgroundColor='white';
+            }
 
+            function hamburger(){
+                var x= document.getElementById("navlinks");
+                if (x.style.display ==="block") {
+                    x.style.display="none";
+                } else{
+                    x.style.display = "block"
+                }
+            }
 
+            
+        </script>
+        <style>            
+            #parent{
+                display:flex; 
+                justify-content: center; 
+                align-items: center; 
+                min-height: 100vh;
+                min-width: 100vh;
+            }
+            .left{
+                display: flex; 
+                width:300px; 
+                flex-direction:column; 
+                justify-content: center;
+            }
+            header{
+                display: flex; 
+                justify-content:center;
+            }
+            .socials{
+                display: flex;
+                justify-content:space-between;
+            }
+            .right{
+                display:flex; 
+                justify-content:flex-end; 
+                border:solid black 2pt;
+                padding: 10px;
+                border-radius: 1em;
+            }
 
+            img{width:50px; margin:15px;}
+
+            @media only screen and (max-width:768px){
+                body{
+                    font-size:2em;
+                }
+                .parent{
+                    width:100%;
+                    height:100%; 
+                    display:block;
+                }
+                .left{
+                    width:80%;
+                    flex-direction:column;
+                }
+            }
         </style>
     </head>
 
     <body>
         <nav>
-            <a id="skip" href="#content">Skip to Content</a> 
-            <a href="index.html">Home</a> <span>|</span>
-            <a href="skills.html">Skills</a> <span>|</span>
-            <a href="about.html">About</a> <span>|</span>
-            <a href="contact.html">Contact</a> <span>|</span>
+            <div id="navlinks">
+                <a class="active" href="index.html">home</a><span>|</span>
+                <a href="about.html">about</a><span>|</span>
+                <a href="architecture.html">architecture</a><span>|</span>
+                <a href="art.html">art</a><span>|</span>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="hamburger">
+                <img id="icon" src="../images/favicon.png" alt="menu icon" onclick="hamburger()">
+            </div>
         </nav>
-    
+
     <a id="content"></a>
 
-    <section>
-        <h1>Contact</h1>
-    
-        <div class="floats">
+    <div id="parent">
+
+        <div class="left">
             <a id="content"></a>
-            <div class="address">
-                <h2>Address</h2>
-                Katrina S. Abad <br>618 Kensington Road<br>Syracuse NY, 13210
-            </div>
-            <div class="email">
-                    <p><a href="mailto:ksabad@syr.edu">Katrina S. Abad Email</a></p>
-            </div>
-            <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/katrina-abad/" target="_blank">
-                    <img src="../images/LI-Logo.png" alt="linkedin logo" height="10"> </a>
-                    <a href="https://www.linkedin.com/in/katrina-abad/" target="_blank">My LinkedIn Profile</a>
-            </div>    
-        </div>
-        
-        <div class="flex">
-            <figure>
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11666.314876177026!2d-76.1203977020737!3d43.029253754204625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f36ee8acef15%3A0xdc578cb0e9f4e3a6!2sSyracuse%20Cooperative%20Market!5e0!3m2!1sen!2sus!4v1631811486590!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </figure>
-
-            <div class="form">
-                    <form action="mailto:ksabad@syr.edu" method="post">
-                        <label for="fullname"><strong>Full Name</strong></label>
-                        <br>
-                        <input type="text" id="fullname" name="fname">
-                        <br><br>
-
-                        <label for="like"><strong>Did you like this page?</strong></label>
-                        <br>
-                        <select id="like" name="likeit">
-                                <option value="love">Loved it!</option>
-                                <option value="like">It's pretty good</option>
-                                <option value="okay">I mean... it works</option>
-                                <option value="no">It needs some work</option>
-                                <option value="ugh">I hated it</option>
-                        </select>
-                        <br><br>
-
-                        <label for="advice"><strong>Penny for your thoughts:</strong></label>
-                        <br>
-                        <textarea id="advice" name="advice" rows="10" cols="30">Tell us what you think!
-                        </textarea>
-                        <br>
-                        <input type="submit" value="send">
-
-                    </form>
+            <header>
+                <h2 id="greeting" onmouseover='hello()' onmouseout="goodbye()">keep in touch</h2>
+            </header>
+    
+            <div class="socials">
+                <div>
+                    <a href="https://www.instagram.com/badsmelldog/" target="_blank">
+                    <img src="images/eye.png" alt="eye icon"></a>
+                    <br>instagram
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/katrina-abad/"><img src="images/linkred.png" alt="link icon"></a>
+                    <br>linkedin 
+                </div>
+                <div>
+                    <a href="https://issuu.com/katrinaabad"><img src="images/issuu.png" alt="document icon"></a>
+                    <br>  issuu
                 </div>
             </div>
-    </section>
+        </div>
+    </div>
 
-    <footer>
+    
+    <footer class="footer">
         <div class="year">
-            <strong>&copy;2021</strong>
+            <strong>&copy;2021 Katrina Abad </strong>
         </div>
     </footer>
 

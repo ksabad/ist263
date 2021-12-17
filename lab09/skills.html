@@ -10,7 +10,7 @@
             .flexa{display: flex; flex-basis:900px;flex-direction:column;}
             .flex1{display: flex; flex-basis:900px; justify-content:space-between;} 
             .flex2{display:flex;}
-            aside{padding:15px; margin-left: 15px;color:white; background-color:#ed6335; border-radius:1em; height:300px;}
+            aside{padding:15px; margin-left: 15px; border: black 1pt; border-radius:1em; height:300px;}
             h2{color:white;}
         </style>
         
@@ -36,36 +36,42 @@
         <div class="flex1">
 
             <div>
-                <img src="images/noun_Art_3714207.png" alt="art"><br>Drawing
+                <a href="https://www.instagram.com/badsmelldog/" target="_blank"><img src="images/eye.png" alt="eye icon"></a>
+                <br>instagram
             </div>
             <div>
-                <img src="images/noun_rhino_3839771.png" alt="Rhino3D" width="100px"><br>Rhino 3D
+                <a href="https://www.instagram.com/badsmelldog/" target="_blank"><img src="images/eye.png" alt="eye icon"></a>
+                <br>instagram
             </div>
             <div>
-                <img src="images/noun_photoshop_622609.png" alt="photoshop"><br>Photoshop
+                <a href="https://www.instagram.com/badsmelldog/" target="_blank"><img src="images/eye.png" alt="eye icon"></a>
+                <br>instagram            
             </div>
-            <div>
-                <img src="images/noun_Illustrator_622610.png" alt="Illustrator"><br>Illustrator
-            </div>
-            <div>
-                <img src= "images/noun_html_518914.png" alt="HTML"><br>HTML
-            </div>
-
         </div>
 
     </div>
 
-    <div class="flex2">
-        <aside>
-            <h2>Other Skills</h2>
-            <p>Painting</p>
-            <p>AutoCad</p>
-            <p>Revit</p>
-            <p>Grasshopper</p>
-            <p>V-Ray</p>
-            <p>Python</p>
-        </aside>
-    </div>
+        <div class="flex2">
+            <form action="mailto:ksabad@syr.edu" method="post">
+                <label for="fullname"><strong>Full Name</strong></label>
+                <br>
+                <input type="text" id="fullname" name="fname">
+                <br><br>
+
+                <label for="like"><strong>Did you like this page?</strong></label>
+                <br>
+                <select id="like" name="likeit">
+                        <option value="love">Loved it!</option>
+                        <option value="like">It's pretty good</option>
+                        <option value="okay">I mean... it works</option>
+                        <option value="no">It needs some work</option>
+                        <option value="ugh">I hated it</option>
+                </select>
+                <label for="advice"><strong>Penny for your thoughts:</strong></label><br>
+                <textarea id="advice" name="advice" rows="10" cols="30">Tell us what you think!</textarea><br>
+                    <input type="submit" value="send">
+            </form>
+        </div>
 </div>
 
 
